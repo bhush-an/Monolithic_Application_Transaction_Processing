@@ -1,16 +1,16 @@
 # Monolithic_Application_Transaction_Processing
 
-1. Custom annotation - to generate custom ID with datatype as String
-2. @CreationTimestamp and @UpdateTimeStsmp - automatically stores this date and time
-3. @PrePersist - will generate ID if null
-4. Declare field to generate custom ID with datatype as String
-5. Hit pincode API to store city, state, country in DB - RestTemplate
-6. Insert data into 2 tables using only one method - using flush() since data is stored at the end of method
-7. JWT as per new springboot version
-8. Store custom parameters in JWT token and use it to get/post/put/delete different operations
-9. @Builder -- @JsonInclude(JsonInclude.Include.NON_NULL) -- using builder pattern to send response
-10. OTP based password setting - JavaMailSender dependency - SimpleMailMessage class
-11. Setting OTP expiry - expiresAt(LocalDateTime.now().plusMinutes(2))
-12. Gmail based mail sender - auth token required to do this
-13. Global Exception Handler - generic and custom
-14. Image handling - renaming each image with unique name to avoid discrepancy
+1. Custom Annotation for ID: Generate unique ID with String datatype.
+2. @CreationTimestamp & @UpdateTimestamp: Auto store creation and update timestamps.
+3. @PrePersist: Generate ID if null before persisting.
+4. Custom ID Field: Define String field for custom-generated ID.
+5. Pincode API (RestTemplate): Fetch city, state, and country using pincode.
+6. Insert into Multiple Tables: Use flush() to save data in two tables.
+7. JWT (Spring Boot Latest): Implement JWT authentication for secure communication.
+8. Custom Parameters in JWT: Store and use custom data (roles, permissions) for CRUD operations.
+9. @Builder & @JsonInclude: Build response objects and exclude null values in JSON.
+10. OTP for Password (JavaMailSender): Send OTP for password setting/reset.
+11. OTP Expiry: Set expiry with LocalDateTime.now().plusMinutes(2).
+12. Gmail Mail Sender: Configure Gmail with auth token for sending emails.
+13. Global Exception Handler: Handle errors globally with generic/custom responses.
+14. Image Renaming: Rename images uniquely to avoid conflicts.

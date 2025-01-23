@@ -1,4 +1,4 @@
-# Monolithic_Transaction_Processing
+# Monolithic_Application_Transaction_Processing
 
 1. Custom annotation - to generate custom ID with datatype as String
 2. @CreationTimestamp and @UpdateTimeStsmp - automatically stores this date and time
